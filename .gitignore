@@ -1,0 +1,15 @@
+# SQLite database
+data/raw/database/bank_sqlite.db
+
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
