@@ -60,17 +60,6 @@ El volumen anual de transacciones permanece prácticamente constante durante tod
 
 La estabilidad observada refleja una actividad transaccional homogénea durante todo el periodo. En un entorno real, este indicador serviría como referencia para detectar cambios significativos en el comportamiento de los clientes o en la evolución del negocio.
 
--- ----------------------------------------------------------
--- 02. ¿Cómo ha evolucionado el importe total transaccionado
---     a lo largo del tiempo?
--- ----------------------------------------------------------
-
-SELECT
-    STRFTIME('%Y', transaction_date) AS transaction_year,
-    ROUND(SUM(amount_usd), 2) AS total_amount_usd
-FROM transactions
-GROUP BY transaction_year
-ORDER BY transaction_year;
 
 ### FA-02 · Evolución del importe transaccionado
 
@@ -111,3 +100,56 @@ Los diez comercios con mayor actividad concentran entre **1,23 y 1,34 millones d
 **Impacto para el negocio**
 
 La identificación de los comercios con mayor volumen económico permite detectar establecimientos estratégicos para la entidad, facilitando el desarrollo de acuerdos comerciales, el seguimiento de la actividad económica y la identificación de oportunidades de crecimiento.
+
+## Business Relationships
+
+### BR-01 · Perfil crediticio y combinación de productos
+
+**Hallazgo**
+
+La combinación de productos financieros presenta un patrón muy similar en todos los segmentos crediticios. Las combinaciones **Account + Card** y **Account + Card + Loan** son las más frecuentes independientemente del nivel de riesgo del cliente.
+
+**Impacto para el negocio**
+
+La contratación de productos no muestra una dependencia clara del perfil crediticio. Esto sugiere que las estrategias de vinculación pueden aplicarse de forma transversal, adaptando únicamente las condiciones comerciales según el nivel de riesgo de cada segmento.
+
+
+### BR-02 · Perfil crediticio y actividad financiera
+
+**Hallazgo**
+
+La actividad financiera media es muy similar entre todos los segmentos crediticios. No se aprecia una relación significativa entre el perfil crediticio y el número de transacciones o el importe económico generado.
+
+**Impacto para el negocio**
+
+El perfil crediticio, por sí solo, no resulta suficiente para identificar a los clientes más activos. La entidad debería complementar este criterio con variables de comportamiento, como la vinculación, la actividad transaccional o la contratación de productos, para mejorar la segmentación comercial.
+
+### BR-03 · Nivel de vinculación y actividad financiera
+
+**Hallazgo**
+
+Se observa una relación positiva entre el número de productos contratados y la actividad financiera. Los clientes con **dos o tres productos** realizan un número significativamente mayor de transacciones y generan un mayor volumen económico que aquellos con un único producto.
+
+**Impacto para el negocio**
+
+Incrementar el nivel de vinculación de los clientes representa una oportunidad para aumentar el uso de los servicios financieros. Las estrategias de venta cruzada dirigidas a clientes con un solo producto podrían contribuir a incrementar tanto la actividad transaccional como el volumen económico generado.
+
+### BR-04 · Perfil de los clientes de mayor valor
+
+**Hallazgo**
+
+La combinación de productos contratados influye más en la actividad financiera que el perfil crediticio. Los clientes con **Account + Card + Loan** y **Account + Card** presentan los mayores niveles de actividad y volumen económico, independientemente de su segmento crediticio.
+
+**Impacto para el negocio**
+
+La vinculación con la entidad constituye un mejor indicador del valor del cliente que el perfil crediticio. Incrementar la contratación conjunta de productos puede contribuir a aumentar tanto la actividad transaccional como el volumen económico generado.
+
+### BR-05 · Segmentación comercial de clientes
+
+**Hallazgo**
+
+La clasificación comercial identifica **33.485 clientes** como segmento de alta prioridad, frente a **5.364** de prioridad media y **11.151** de prioridad baja. La elevada vinculación mediante la contratación conjunta de productos constituye el principal factor asociado al mayor valor comercial.
+
+**Impacto para el negocio**
+
+La segmentación comercial facilita la priorización de campañas de fidelización y venta cruzada. Concentrar los esfuerzos sobre los clientes de alta prioridad permite proteger el valor generado, mientras que los segmentos medio y bajo representan oportunidades para incrementar la vinculación y el uso de los servicios financieros.

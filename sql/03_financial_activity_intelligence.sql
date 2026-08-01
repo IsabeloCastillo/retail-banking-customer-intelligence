@@ -3,6 +3,22 @@
 FINANCIAL ACTIVITY INTELLIGENCE
 ==========================================================
 
+Business Questions
+------------------
+BQ-05 · Evolución de la actividad financiera.
+
+BQ-06 · Actividad financiera por clientes, cuentas y comercios.
+
+Business Value
+--------------
+Analizar la evolución temporal de la actividad financiera
+e identificar los clientes, cuentas y comercios con mayor
+volumen de operaciones para apoyar la toma de decisiones
+comerciales y operativas.
+
+==========================================================
+*/
+
 /*
 ==========================================================
 BQ-05 · Evolución del volumen de transacciones
