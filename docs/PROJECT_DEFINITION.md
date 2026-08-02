@@ -176,41 +176,51 @@ Identificar los principales generadores de actividad para apoyar decisiones come
 
 # Business Relationships
 
-## **BQ-07 · Relación entre productos y actividad**
+## **BQ-07 · Perfil crediticio y combinación de productos**
 
 ### **Pregunta de negocio**
 
-¿Existe relación entre la adopción de productos financieros y el nivel de actividad transaccional de los clientes?
+¿Cómo varía la combinación de productos financieros según el perfil crediticio de los clientes?
 
 ### **Valor para el negocio**
 
-Determinar si los clientes con una mayor vinculación presentan también una mayor actividad financiera.
+Determinar si el perfil crediticio influye en el nivel de vinculación de los clientes para apoyar estrategias de segmentación y venta cruzada.
 
 ---
 
-## **BQ-08 · Patrones de comportamiento financiero**
+## **BQ-08 · Perfil crediticio y actividad financiera**
 
 ### **Pregunta de negocio**
 
-¿Qué patrones de comportamiento pueden identificarse al relacionar clientes, cuentas, tarjetas, préstamos y transacciones?
+¿Los clientes con mejor perfil crediticio generan una mayor actividad financiera?
 
 ### **Valor para el negocio**
 
-Descubrir relaciones de negocio que no pueden identificarse analizando cada entidad por separado y generar conocimiento útil para la toma de decisiones.
+Analizar si existe una relación entre el perfil crediticio y la actividad financiera para identificar segmentos de mayor valor.
 
 ---
 
-# Executive Insights
-
-## **BQ-09 · Indicadores estratégicos del negocio**
+## **BQ-09 · Nivel de vinculación y actividad financiera**
 
 ### **Pregunta de negocio**
 
-¿Qué indicadores resumen el estado actual del negocio y qué oportunidades de mejora pueden identificarse?
+¿Los clientes con mayor número de productos financieros realizan más transacciones y generan un mayor volumen económico?
 
 ### **Valor para el negocio**
 
-Integrar los principales **KPIs** e **insights** del proyecto en un dashboard ejecutivo que facilite la toma de decisiones por parte de la Dirección de Banca Minorista.
+Evaluar si un mayor nivel de vinculación con la entidad se traduce en un incremento de la actividad financiera y apoyar estrategias de fidelización y venta cruzada.
+
+---
+
+## **BQ-10 · Segmentos con mayor potencial comercial**
+
+### **Pregunta de negocio**
+
+¿Qué características comparten los clientes de mayor valor y qué segmentos deberían priorizarse en las estrategias comerciales?
+
+### **Valor para el negocio**
+
+Identificar los perfiles con mayor potencial comercial para orientar campañas de fidelización, crecimiento de la vinculación y desarrollo del negocio.
 
 # 11. Valor esperado para el negocio
 
@@ -236,7 +246,7 @@ El proyecto utiliza un conjunto de datos bancario sintético con una estructura 
 - Branches
 - Transactions
 
-El dataset ha sido seleccionado porque reproduce de forma coherente las relaciones existentes en una entidad bancaria, permitiendo desarrollar un proyecto de Business Intelligence orientado al análisis de la actividad financiera, la adopción de productos y las relaciones entre clientes, cuentas, préstamos, tarjetas y transacciones."
+El dataset ha sido seleccionado porque reproduce de forma coherente las relaciones existentes en una entidad bancaria, permitiendo desarrollar un proyecto de Business Intelligence orientado al análisis de la actividad financiera, la adopción de productos y las relaciones entre clientes, cuentas, préstamos, tarjetas y transacciones.
 
 Su estructura facilita la realización de consultas SQL complejas, análisis mediante Python y el desarrollo de dashboards ejecutivos en Power BI.
 
@@ -247,20 +257,30 @@ Aunque los datos son sintéticos, presentan un volumen suficiente y relaciones c
 El proyecto seguirá la siguiente arquitectura de trabajo:
 
 Dataset Relacional
-↓
+        ↓
 SQL Analytics
-↓
+        ↓
 Python Analytics
-↓
-Power BI Dashboard
-↓
-Business Insights & Recommendations
+        ↓
+Business Insights
+        ↓
+Power BI Executive Dashboard
 
 Cada fase utilizará la salida de la fase anterior como punto de partida, garantizando la trazabilidad del análisis desde los datos originales hasta las recomendaciones finales.
 
 Todo el desarrollo seguirá el principio:
 
-Business Question → SQL → Python → Visualización → Insight → Recomendación
+Business Question
+        ↓
+SQL Analytics
+        ↓
+Python Analytics
+        ↓
+Business Insight
+        ↓
+Power BI Dashboard
+        ↓
+Business Recommendation
 
 # 14. Roadmap
 
@@ -275,11 +295,11 @@ Desarrollo de consultas SQL para responder a cada Business Question.
 ## Fase 3 · Python Analytics
 Análisis complementarios, preparación de datos y generación de métricas adicionales.
 
-## Fase 4 · Power BI
-Diseño e implementación del dashboard ejecutivo.
+## Fase 4 · Business Insights
+Documentación de los principales hallazgos y recomendaciones obtenidos durante el análisis.
 
-## Fase 5 · Business Insights
-Obtención de conclusiones y recomendaciones para el negocio.
+## Fase 5 · Power BI Dashboard
+Diseño e implementación del dashboard ejecutivo para la comunicación de resultados.
 
 ## Fase 6 · Documentación y publicación
 Revisión final del proyecto y publicación en GitHub.
@@ -290,6 +310,6 @@ El proyecto se considerará finalizado cuando se cumplan los siguientes criterio
 
 - Todas las Business Questions hayan sido respondidas mediante análisis SQL.
 - Los análisis en Python complementen el trabajo realizado en SQL.
-- El dashboard responda a todas las preguntas de negocio definidas.
+- El dashboard sintetice los principales KPIs, visualizaciones e insights obtenidos durante el análisis y facilite la toma de decisiones.
 - Se documenten los principales insights y recomendaciones.
 - El proyecto quede completamente documentado y publicado en GitHub.
