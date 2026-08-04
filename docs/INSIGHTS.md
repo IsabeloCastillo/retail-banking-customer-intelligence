@@ -180,3 +180,43 @@ Los siguientes insights corresponden a los análisis estadísticos y exploratori
 
 ## Statistical & Behavioral Analysis
 
+### FE-01 · Elevada presencia de clientes multiproducto
+
+**Hallazgo**
+
+El **75,67 %** de los clientes mantiene **dos o más productos financieros** contratados, reflejando un elevado nivel de vinculación con la entidad.
+
+**Impacto para el negocio**
+
+La elevada proporción de clientes multiproducto evidencia una base comercial consolidada. Este indicador permitirá evaluar estrategias de fidelización y comparar el comportamiento entre clientes con distinto nivel de vinculación.
+
+### FE-02 · Baja utilización de productos de financiación
+
+**Hallazgo**
+
+El **54,92 %** de los clientes no dispone de préstamos contratados, lo que refleja un amplio segmento de clientes sin productos de financiación activos.
+
+**Impacto para el negocio**
+
+Este segmento representa una oportunidad para desarrollar campañas comerciales orientadas a incrementar la contratación de productos de financiación y fortalecer la relación con la entidad.
+
+### FE-03 · Segmentación equilibrada del nivel de vinculación
+
+**Hallazgo**
+
+La clasificación del nivel de vinculación mediante reglas de negocio genera una distribución equilibrada entre las categorías **Low (36,85 %)**, **Medium (34,51 %)** y **High (28,65 %)**.
+
+**Impacto para el negocio**
+
+Una segmentación equilibrada facilita la comparación entre grupos de clientes y mejora la interpretación de indicadores comerciales en el dashboard de Power BI.
+
+### FE-04 · Segmentación del patrimonio de los clientes
+
+**Hallazgo**
+
+La clasificación del saldo total mediante reglas de negocio genera una distribución equilibrada entre clientes con **bajo (31,69 %)**, **medio (38,97 %)** y **alto patrimonio (29,33 %)**.
+
+**Impacto para el negocio**
+
+Esta segmentación facilitará la identificación de clientes con distinta capacidad financiera y permitirá desarrollar análisis comparativos y visualizaciones orientadas al negocio en Power BI.
+
