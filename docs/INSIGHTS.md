@@ -1,5 +1,21 @@
 # Insights del Proyecto
 
+Este documento recopila los principales **Business Insights** obtenidos a lo largo del proyecto.
+
+Los hallazgos se organizan según la fase en la que fueron identificados, permitiendo mantener la trazabilidad entre los análisis realizados en SQL, Python y Power BI.
+
+---
+
+# SQL Analytics
+
+Los siguientes insights corresponden a los análisis desarrollados durante la fase **SQL Analytics**, donde se respondieron las Business Questions definidas en el proyecto.
+
+---
+
+## Customer Intelligence
+
+### CI-01 · Distribución del riesgo crediticio
+
 ## Customer Intelligence
 
 ### CI-01 · Distribución del riesgo crediticio
@@ -153,3 +169,14 @@ La clasificación comercial identifica **33.485 clientes** como segmento de alta
 **Impacto para el negocio**
 
 La segmentación comercial facilita la priorización de campañas de fidelización y venta cruzada. Concentrar los esfuerzos sobre los clientes de alta prioridad permite proteger el valor generado, mientras que los segmentos medio y bajo representan oportunidades para incrementar la vinculación y el uso de los servicios financieros.
+
+---
+
+# Python Analytics
+
+Los siguientes insights corresponden a los análisis estadísticos y exploratorios realizados durante la fase **Python Analytics**, complementando los resultados obtenidos mediante SQL.
+
+---
+
+## Statistical & Behavioral Analysis
+
