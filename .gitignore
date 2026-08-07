@@ -4,7 +4,12 @@ data/raw/database/bank_sqlite.db
 # Python
 __pycache__/
 *.py[cod]
+*.pyo
+*.pyd
+
+# Jupyter
 .ipynb_checkpoints/
+*.nbconvert.ipynb
 
 # OS
 .DS_Store

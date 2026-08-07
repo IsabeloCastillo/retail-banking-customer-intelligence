@@ -4,7 +4,6 @@
 
 La fase de Python tiene como objetivo complementar el análisis realizado mediante SQL, aportando capacidades de preparación de datos, análisis estadístico e ingeniería de variables.
 
-Python no sustituye el análisis realizado en SQL, sino que amplía el valor del proyecto mediante técnicas que resultan más adecuadas para un entorno de programación que para consultas SQL.
 
 Python no sustituye el análisis realizado en SQL, sino que amplía el valor del proyecto mediante técnicas que resultan más adecuadas para un entorno de programación que para consultas SQL.
 
@@ -18,6 +17,7 @@ Dentro de la arquitectura del proyecto, Python desempeña cuatro funciones princ
 - Realizar análisis estadísticos complementarios.
 - Generar variables derivadas que faciliten el análisis de negocio.
 - Preparar el dataset analítico que será utilizado en Power BI.
+
 El análisis de negocio principal se desarrolla mediante SQL. Python complementa dicho análisis y prepara la información para su explotación visual.
 
 ---
@@ -129,38 +129,39 @@ Enriquecer el modelo analítico mediante variables calculadas reutilizables.
 
 ### Resultado esperado
 
-Dataset enriquecido con variables analíticas.
-
+Dataset analítico enriquecido con nuevas variables de negocio preparado para su validación.
 ---
 
-## Notebook 04 · Export for Power BI
+## Notebook 04 · Dataset Preparation for Business
 
 ### Objetivo
 
-Generar el dataset final que consumirá Power BI.
+Validar el dataset analítico generado durante la fase de Feature Engineering y preparar la versión definitiva que será utilizada en Power BI.
 
 ### Problema que resuelve
 
-Centralizar la preparación final de los datos antes de la fase de visualización.
+Garantizar que el modelo analítico cumple los requisitos de calidad, consistencia y estructura necesarios para la fase de visualización y análisis de negocio.
 
 ### Incluye
 
-- Selección de variables finales.
-- Unión de datasets.
-- Validaciones finales.
-- Exportación.
+- Validación de la estructura del dataset.
+- Revisión de tipos de datos.
+- Verificación de valores nulos e inconsistencias.
+- Selección de variables finales para el modelo analítico.
+- Exportación del dataset definitivo para Power BI.
 
 ### Excluye
 
+- Nuevas transformaciones de datos.
+- Feature Engineering adicional.
 - Análisis estadísticos.
-- Visualizaciones.
-- Transformaciones experimentales.
+- Visualizaciones exploratorias.
 
 ### Resultado esperado
 
-Dataset final listo para Power BI.
-
+Dataset analítico validado y exportado para su utilización en Power BI.
 ---
+
 
 # 5. Trazabilidad
 

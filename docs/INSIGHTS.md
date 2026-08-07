@@ -16,10 +16,6 @@ Los siguientes insights corresponden a los análisis desarrollados durante la fa
 
 ### CI-01 · Distribución del riesgo crediticio
 
-## Customer Intelligence
-
-### CI-01 · Distribución del riesgo crediticio
-
 **Hallazgo**
 
 Más del 50 % de la cartera (50,71 %) pertenece a la categoría **Poor**, mientras que solo el 20,06 % se encuentra en las categorías **Very Good** y **Excellent**.
@@ -219,4 +215,62 @@ La clasificación del saldo total mediante reglas de negocio genera una distribu
 **Impacto para el negocio**
 
 Esta segmentación facilitará la identificación de clientes con distinta capacidad financiera y permitirá desarrollar análisis comparativos y visualizaciones orientadas al negocio en Power BI.
+
+---
+
+# Power BI Dashboard Insights
+
+Los siguientes insights resumen las principales conclusiones obtenidas durante la fase de visualización en Power BI. Estos hallazgos sintetizan los resultados obtenidos previamente en SQL y Python mediante un enfoque orientado a la toma de decisiones.
+
+## BI-01 · La vinculación impulsa el valor del cliente
+
+**Hallazgo**
+
+Los clientes con un mayor nivel de vinculación concentran el mayor volumen económico y presentan un saldo medio significativamente superior.
+
+**Impacto para el negocio**
+
+Incrementar la vinculación mediante estrategias de cross-selling puede aumentar el valor generado por cada cliente.
+
+---
+
+## BI-02 · La actividad financiera aumenta con el número de productos
+
+**Hallazgo**
+
+Tanto el volumen total de transacciones como el número medio de operaciones aumentan conforme crece el número de productos contratados.
+
+**Impacto para el negocio**
+
+Promover la contratación de productos adicionales constituye una oportunidad para incrementar la actividad financiera y fortalecer la relación comercial.
+
+---
+
+## BI-03 · El perfil crediticio presenta un comportamiento estable
+
+**Hallazgo**
+
+La distribución del riesgo crediticio resulta relativamente homogénea entre los distintos segmentos analizados.
+
+**Impacto para el negocio**
+
+El perfil crediticio, por sí solo, no permite identificar a los clientes de mayor valor. Debe complementarse con variables de comportamiento y vinculación.
+
+---
+
+## BI-04 · Los clientes multiproducto generan mayor valor
+
+**Hallazgo**
+
+Los clientes con varios productos financieros presentan un saldo medio superior y una mayor actividad transaccional.
+
+**Impacto para el negocio**
+
+Las estrategias orientadas a incrementar el número de productos por cliente pueden mejorar tanto la fidelización como la rentabilidad de la cartera.
+
+---
+
+# Conclusión
+
+Los análisis realizados mediante SQL, Python y Power BI muestran que el nivel de vinculación constituye el principal indicador del valor del cliente. La combinación de productos financieros y el comportamiento transaccional aportan mayor capacidad explicativa que el perfil crediticio para identificar oportunidades comerciales y apoyar la toma de decisiones estratégicas.
 

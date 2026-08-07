@@ -262,9 +262,11 @@ SQL Analytics
         ↓
 Python Analytics
         ↓
+Power BI Analytics
+        ↓
 Business Insights
         ↓
-Power BI Executive Dashboard
+Business Recommendations
 
 Cada fase utilizará la salida de la fase anterior como punto de partida, garantizando la trazabilidad del análisis desde los datos originales hasta las recomendaciones finales.
 
@@ -276,9 +278,9 @@ SQL Analytics
         ↓
 Python Analytics
         ↓
-Business Insight
-        ↓
 Power BI Dashboard
+        ↓
+Business Insight
         ↓
 Business Recommendation
 

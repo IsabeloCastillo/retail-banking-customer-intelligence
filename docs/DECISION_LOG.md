@@ -102,17 +102,18 @@ Quedan excluidos fraude, Machine Learning y sistemas de recomendación.
 
 **Descripción**
 
-El proyecto se organizará en torno a cuatro bloques:
+El proyecto se organizará siguiendo un flujo completo de Business Intelligence compuesto por las siguientes fases:
 
-- Customer Intelligence
-- Product Intelligence
-- Financial Activity Intelligence
-- Executive Insights
+- SQL Analytics
+- Python Analytics
+- Power BI Analytics
+- Business Insights & Recommendations
 
 **Justificación**
 
-Organizar el análisis desde la perspectiva del negocio y no desde las tablas de la base de datos.
+Esta arquitectura garantiza la trazabilidad completa desde los datos originales hasta la formulación de recomendaciones de negocio, manteniendo una separación clara entre el análisis, la preparación de datos y la comunicación de resultados.
 
 **Impacto**
 
-Toda la estructura de SQL, Python y Power BI seguirá esta organización.
+La estructura del repositorio, la documentación y el desarrollo del proyecto siguen este flujo de trabajo para asegurar la coherencia metodológica.
+
