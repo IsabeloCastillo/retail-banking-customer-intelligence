@@ -35,6 +35,16 @@ The project includes data preparation with Python, business-oriented SQL analysi
 
 ---
 
+## 📊 Dataset
+
+The project uses a fictional retail banking customer dataset designed to simulate a real-world banking environment.
+
+The dataset contains customer information, financial products, account balances, customer engagement indicators and transaction activity.
+
+It is used exclusively for analytical and portfolio purposes.
+
+---
+
 # 🛠️ Technologies Used
 
 | Category | Technologies |
@@ -213,6 +223,6 @@ The repository includes detailed technical documentation describing every stage 
 
 **Isabelo Castillo**
 
-Aspiring Data Analyst passionate about Business Intelligence, SQL, Python and Power BI.
+Data Analyst focused on Business Intelligence, SQL, Python and Power BI.
 
 GitHub: https://github.com/IsabeloCastillo
